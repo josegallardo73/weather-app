@@ -1,0 +1,172 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+.card {
+    opacity: 0.9;
+    background-color: white;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card-header {
+    background-color:#222;
+}
+
+.card-header:first-child {
+    border-radius: 10px;
+  }
+
+.location {
+    text-transform: uppercase;
+    color: orange;
+}
+
+.humidity, .wind {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.humidity {
+    margin-bottom: 15px;
+}
+
+.date {
+    color: white;
+}
+
+.error-city, .error-countryCode {
+    color: red;
+    text-transform: uppercase;
+}
+
+.country, .city {
+   text-align: center;
+   font-size: 1.2em;
+}
+
+.description {
+    font-size: 1.8em;
+    color: orange;
+}
+
+.temperatures {
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature-min-text, .temperature-max-text, .feels-like-text,
+.temperature-min, .temperature-max, .feels-like {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.temperature {
+    color: white;
+}
+
+.temperature-min, .temperature-max, .feels-like {
+    color: orange;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.weather-form {
+    margin-top: 25px;
+}
+
+
+.submit-bottom {
+    padding: 15px;
+    height: 70px;
+    margin-top: 40px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.title {
+    text-align: center;
+}
+
+.td {
+    color: #444;
+    font-weight: bold;
+    text-align: center;
+}
+
+.td:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.th {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.filter {
+    display: none;
+}
+
+.cold {
+    color: steelblue;
+}
+
+.warm {
+    color: olivedrab;
+}
+
+.hot {
+    color: orange
+}
+
+.numResults {
+    width: 35px;
+    padding: 5px;
+    text-align:center;
+}
+
+.remove {
+    display: none;
+}
+
+.showTotal {
+    color: olive;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.labelResults {
+    font-weight: bold;
+}
+
+.numResults {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.defaultResults {
+    font-style: italic;
+    color: olive;
+}
+
+.paginate {
+    position: absolute;
+    left: 42%;
+    bottom: 25%;
+}
+
+

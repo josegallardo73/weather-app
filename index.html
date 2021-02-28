@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación del Clima</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app/styles/styles.css">
+    <script defer type="module" src="app/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-dark justify-content-between mb-5">
+            <a class="navbar-brand title-navbar"><h3>Home</h3></a>
+            <a href="listResults.html">WEATHER'S LIST</a>
+        </nav>
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-sm-12 mx-auto text-center">
+                <div id="card" class="card">
+                    <div id="card-body" class="card-body">
+                        <template id="template">
+                            <div class="card-header">
+                                <h1 id="location" class="h2 location"></h1>
+                                <h3 id="date" class="date" class="h4"></h3>
+                                <h3 id="description" class="h4 description"></h3>
+                                <h3 class="temperature" id="temperature"></h3>
+                                <div class="temperatures" id="temperatures">
+                                    <span class="temperature-min-text">Temperatura mínima</span>
+                                    <span id="temperature_min" class="temperature-min"></span>
+                                    <span class="temperature-max-text">Temperatura máxima</span>
+                                    <span id="temperature_max" class="temperature-max"></span>
+                                    <span
+                                    class="feels-like-text">Sensación térmica</span>
+                                    <span id="feels_like" class="feels-like"></span>
+                                </div>
+                            </div>
+                            <ul class="list-group mt-3">
+                                <li id="humidity" class="list-group-item humidity"></li>
+                                <li id="wind" class="list-group-item wind"></li>
+                            </ul>
+                            <form action="" id="weather-form" class="weather-form">
+                                <div class="form-group">
+                                    <input type="text" id="city" class="form-control city" placeholder="Search a new city" autofocus>
+                                </div>
+                                <div id="error-city" class="error-city"></div>
+                                <div class="form-group">
+                                    <input type="text" id="countryCode" class="form-control country" placeholder="Search a new country code" autofocus>
+                                </div>
+                                <div id="error-countryCode" class="error-countryCode"></div>
+                                <div class="form-group">
+                                    <button class="btn btn-dark btn-block submit-bottom" id="btnWeather">
+                                        Solicitar
+                                    </button>
+                                </div>
+                            </form>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+</body>
+</html>
