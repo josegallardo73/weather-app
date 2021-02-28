@@ -1,7 +1,7 @@
 export class Weather {
 
     constructor(city = 'Madrid', countryCode = 'ES') {
-        this.apikey = '3a5b6ce07a2cec4a2b7cf3793c9baee9';
+        this.apikey = 'your api key';
         this.city = city;
         this.countryCode = countryCode;
     }
